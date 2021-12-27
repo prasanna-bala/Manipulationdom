@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    
+    <div class="header" style="margin-bottom:0">
+        <h1> Score Board</h1>
+    </div>
+    </br></br>    </br></br>    </br></br>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="imgcontainter">
+
+                <img src="./img/index.jpeg" alt="">
+
+                <div class="content">
+                    <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                    </h1>
+                    <p class="subtitle">Use the buttons below to keep score</p>
+                   
+                    <label for="playto" class="label is-large is-inline">Playing To</label><span id="playing">0</span>
+                    <div class="custom-select" >
+                        <select class="round" id="playto"onchange="assinplayto()"> 
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="buttondiv">
+                    <button id="Player1" class="buttonplayer">Player One</button>
+                    <button id="Player2" class="buttonplayer">Player Two</button>
+                    <button id="reset"   class="reset">Reset</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./js/ap.js"></script>
+</body>
+
+</html>

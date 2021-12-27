@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Dynamically Add Liste de courses </title>
+    </head>
+
+    <body>
+        <div class="header" style="margin-bottom:0">
+        <h1>Dynamic List</h1>
+        </div>
+        <div class="form-container">
+            <div class="container">
+                <label for="list"><b>Add Liste de Course</b></label>
+                <input type="text" name="list" class="inputtext1" id="candidate" required >
+                <div class="buttondiv1">
+                    <button class="button1" onclick="addItem()">Add Item</button>
+                    <button class="button1" onclick="removeItem()">Remove Item</button>
+                </div>
+            </div>
+            <ul id="dynamic-list"></ul>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+
+    </html>

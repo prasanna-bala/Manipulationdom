@@ -8,17 +8,22 @@ const p2 = {
     button: document.querySelector('#Player2'),
     display: document.querySelector('#p2Display')
 }
- platto= document.querySelector('#playing')
+
 const resetButton = document.querySelector('#reset');
 const winningScoreSelect = document.querySelector('#playto');
 let winningScore = 21;
 let isGameOver = false;
 
-function assinplayto()
- {
-    platto.display.textContent=winningScore;
-   
- }
+function notEmpty(){
+
+    var e = document.getElementById("playto");
+    var strUser = e.options[e.selectedIndex].value;
+    document.getElementById('playing').innerHTML = strUser;
+    
+    }
+    notEmpty()
+        
+        document.getElementById("playto").onchange = notEmpty;
 
 function updateScores(player, opponent) {
     if (!isGameOver) {
@@ -47,8 +52,7 @@ p2.button.addEventListener('click', function () {
 
 winningScoreSelect.addEventListener('change', function () {
     winningScore = parseInt(this.value);
-    
-    platto.display.textContent=winningScore;
+
     reset();
 })
 
